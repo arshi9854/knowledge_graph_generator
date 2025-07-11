@@ -40,7 +40,7 @@ Install all required packages using the provided file:
 
 pip install -r requirements.txt
 
-** Main dependencies:
+ Main dependencies:
 
     langchain, langchain-experimental
 
@@ -52,18 +52,18 @@ pip install -r requirements.txt
 
 # ⚙️ Setup
 
-    ** Clone the repository
+     Clone the repository
 
     git clone https://github.com/arshi9854/knowledge_graph_generator.git
     cd knowledge_graph_generator
 
-    ** Create a virtual environment (optional but recommended)
+     Create a virtual environment (optional but recommended)
     
     python -m venv venv
     source venv/bin/activate  # for Linux/macOS
     venv\Scripts\activate     # for Windows
 
-    ** Run the app
+     Run the app
 
     streamlit run app.py
 

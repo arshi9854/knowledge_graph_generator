@@ -1,10 +1,10 @@
-🧠 Knowledge Graph Generator using Gemma 3 & Ollama | Streamlit App
+# 🧠 Knowledge Graph Generator using Gemma 3 & Ollama | Streamlit App
 
 This Streamlit application extracts structured graph data (entities and relationships) from natural language text using LangChain and locally running Gemma 3 LLM via Ollama. The generated knowledge graph is visualized interactively using PyVis.
 
     🔁 This app is designed for those who want to generate knowledge graphs privately on their local machine without relying on cloud APIs like OpenAI.
 
-✨ Features
+# ✨ Features
 
     📁 Two input modes:
     • Upload .txt files
@@ -20,8 +20,8 @@ This Streamlit application extracts structured graph data (entities and relation
 
     🔧 Easily switch to models like LLaMA 3, Phi-2, or Qwen2 if system resources are low
 
-🛠️ Installation
-✅ Prerequisites
+# 🛠️ Installation
+ ✅ Prerequisites
 
     Python 3.10 or higher
 
@@ -29,18 +29,18 @@ This Streamlit application extracts structured graph data (entities and relation
 
     Download Ollama: https://ollama.com
     Pull a model:
+    
+    ollama pull gemma:4b
+    or use another:
+    ollama pull llama3
 
-ollama pull gemma:4b
-or use another:
-ollama pull llama3
-
-📦 Dependencies
+# 📦 Dependencies
 
 Install all required packages using the provided file:
 
 pip install -r requirements.txt
 
-Main dependencies:
+** Main dependencies:
 
     langchain, langchain-experimental
 
@@ -50,26 +50,26 @@ Main dependencies:
 
     pyvis (for visualizing the graph)
 
-⚙️ Setup
+# ⚙️ Setup
 
-    Clone the repository
+    ** Clone the repository
 
-git clone https://github.com/arshi9854/knowledge_graph_generator.git
-cd knowledge_graph_generator
+    git clone https://github.com/arshi9854/knowledge_graph_generator.git
+    cd knowledge_graph_generator
 
-    Create a virtual environment (optional but recommended)
+    ** Create a virtual environment (optional but recommended)
+    
+    python -m venv venv
+    source venv/bin/activate  # for Linux/macOS
+    venv\Scripts\activate     # for Windows
 
-python -m venv venv
-source venv/bin/activate  # for Linux/macOS
-venv\Scripts\activate     # for Windows
+    ** Run the app
 
-    Run the app
-
-streamlit run app.py
+    streamlit run app.py
 
     Visit http://localhost:8501 to interact with the app.
 
-🚀 Usage Instructions
+# 🚀 Usage Instructions
 
     Choose input method:
 
@@ -91,7 +91,7 @@ streamlit run app.py
 
         🔎 Filter relevant relationships
 
-🧠 How It Works
+# 🧠 How It Works
 
     Input text is passed to LangChainExperimental's LLMGraphTransformer
 
@@ -105,21 +105,21 @@ streamlit run app.py
 
     The result is rendered using PyVis, which gives a dynamic and intuitive knowledge graph
 
-🤖 Models You Can Use
+# 🤖 Models You Can Use
 
-You can switch out gemma3 with any of the following models (installed via Ollama):
-Model Name	Resource Usage	Ideal For
-gemma3	🟠 Medium	Balanced reasoning & speed
-llama3	🔴 High	Deep reasoning, richer output
-phi4-mini-reasoning	🟢 Low	Lightweight setups
-qwen2:7b	🔴 High	Complex document parsing
-
-Edit generate_knowledge_graph.py and replace this line:
-
-llm = Ollama(model="gemma3", temperature=0)
-
-With another model from your local list.
-📌 Screenshot
+    You can switch out gemma3 with any of the following models (installed via Ollama):
+    Model Name	Resource Usage	Ideal For
+    gemma3	🟠 Medium	Balanced reasoning & speed
+    llama3	🔴 High	Deep reasoning, richer output
+    phi4-mini-reasoning	🟢 Low	Lightweight setups
+    qwen2:7b	🔴 High	Complex document parsing
+    
+    Edit generate_knowledge_graph.py and replace this line:
+    
+    llm = Ollama(model="gemma3", temperature=0)
+    
+    With another model from your local list.
+# 📌 Screenshot
 
 <img width="3375" height="1371" alt="knowl;edge_graph_final" src="https://github.com/user-attachments/assets/dcc965f2-8182-45b9-a024-bcd5f00245b1" />
 

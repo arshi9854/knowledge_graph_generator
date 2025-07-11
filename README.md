@@ -31,7 +31,7 @@ This Streamlit application extracts structured graph data (entities and relation
     Pull a model:
 
 ollama pull gemma:4b
-# or use another:
+or use another:
 ollama pull llama3
 
 📦 Dependencies
@@ -121,4 +121,5 @@ llm = Ollama(model="gemma3", temperature=0)
 With another model from your local list.
 📌 Screenshot
 
-(Make sure to update this with your actual image)
+<img width="3375" height="1371" alt="knowl;edge_graph_final" src="https://github.com/user-attachments/assets/dcc965f2-8182-45b9-a024-bcd5f00245b1" />
+
